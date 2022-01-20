@@ -1,2 +1,2 @@
 # JSProjects
-I have some little Projects in this repository 
+I have some little JavaScript Projects in this repository 
