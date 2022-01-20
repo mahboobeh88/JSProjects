@@ -1,0 +1,48 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel=stylesheet href="https://unpkg.com/bootstrap@4.3.1/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
+    <link rel="stylesheet" href="Quiz.css">
+    <script src="Ui.js"></script>
+    <script src="Quiz.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="container d-flex flex-column d-none wellcomeBox">
+            <p class=" my-5  d-block"> Wellcome! </p>
+            <p class=" d-block "> If You Are Ready Please Click On Lets GO! </p>
+            <!-- <button type="button" class="btn  btn-success col-1" onclick="start()">LET'S GO!</button> -->
+        </div>
+        <div class="container d-none testPannel">
+            <div class=" d-flex align-items-center flex-column ">
+                <div class="q-container shadow py-4 mt-5 col-10 bg-secondary" id="qBox"></div>
+                <div class="q-containeR shadow py-4 mt-3 col-10 answerBox" id="a">a. <span></span></div>
+                <div class="q-container shadow py-4 mt-3 col-10 answerBox" id="b">b. <span></span></div>
+                <div class="q-container shadow py-4 mt-3 col-10 answerBox" id="c">c. <span></span></div>
+                <div class="q-container shadow py-4 mt-3 col-10 answerBox" id="d">d. <span></span></div>
+            </div>
+        </div>
+        <div class="d-flex flex-row justify-content-center mt-5 testPannel">
+            <!-- <button type="button" class="btn  btn-primary btn-sm col-1" id="next_btn" onclick="clickNext()">Next</button> -->
+            <button type="button" class="btn btn-lg  btn-success col-1" id="next_btn" onclick="clickNext(false)">LET'S
+                GO!</button>
+        </div>
+        <div class="container d-flex flex-column" id="resultPannel">
+
+            <ul id="resultList">
+
+            </ul>
+        </div>
+
+    </div>
+</body>
+
+</html>

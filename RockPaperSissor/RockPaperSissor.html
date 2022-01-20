@@ -1,0 +1,111 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RockPaperScissor</title>
+    <link rel="shortcut icon" type="image/jpg" href="Img/title.png" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
+    <script src="RockPaperScissor.js"></script>
+    <style>
+        body,
+        .btn {
+            font-size: 1.3rem !important;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: 700;
+        }
+
+        .jumbotron-fluid,
+        .jumbotron {
+            padding: 0rem;
+        }
+
+        .alert {
+            font-size: 1rem !important;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="jumbotron text-center jumbotron-fluid" style="background-color: #d3fbfb;"> -->
+    <div class="jumbotron text-center jumbotron-fluid" style="background-color:transparent">
+
+        <h1>
+            <div class="form-row">
+                <div class="col-lg-3"></div>
+                <div class="col-lg-2" style="padding-top:5.5rem;">
+                    <img  src="Img/rock.png" class="btn" onclick="playerSelection('Rock')">
+                   
+                </div>
+                <div class="col-lg-2" style="padding-top:.5rem;">
+                    <img  src="Img/paper.png" class="btn" style="height: 24rem;"
+                        onclick="playerSelection('Paper')">
+                  
+                </div>
+                <div class="col-lg-2" style="padding-top:3.5rem;">
+                    <img  src="Img/scissor.png" class="btn" onclick="playerSelection('Scissor')">
+                   
+                </div>
+                <div class="col-lg-3" style="padding:12rem 3rem 0rem 0rem">
+                    <div class="alert alert-info alert-dismissible">
+                        <button type="button" class="close" data-dismiss="alert">&times;</button>
+                        These sculptures are the game's main buttons
+                      </div>
+                </div>
+            </div>
+        </h1>
+
+    </div>
+    <div class="container-fluid">
+        <div class="form-row">
+            <div class="col-1"></div>
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="card-header text-center player">
+                        <img src="Img/images.png" width="10%">
+                    </div>
+                    <div class="card-body text-center">
+                        <img id="player" src="Img/rock-paper-scissors.png" width="50%">
+                    </div>
+                    <div id="PlayerScore" class="card-footer text-center player">Your Score: 0</div>
+                </div>
+            </div>
+            <div class="col-2" style="padding: 10rem 3rem 0rem 3rem;">
+                <div class="card" style="margin-bottom: 1rem;">
+                    <button type="button" class="btn btn-success" onclick="reset()">Reset</button>
+                </div>
+                <div class="card bg-warning">
+                    <div id="GameCount" class="card-body text-center">
+                        Games Played : 0
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="card-header text-center computer">
+                        <img src="Img/computer.png" width="10%">
+                    </div>
+                    <div class="card-body text-center">
+                        <img id="computer" src="Img/rock-paper-scissors.png" width="50%">
+                    </div>
+                    <div id="ComputerScore" class="card-footer text-center computer">My Score : 0</div>
+                </div>
+            </div>
+            <div class="col-1"></div>
+        </div>
+
+        <!-- <div>
+            <button id="Rock" type="button" onclick="playerSelection('Rock')">Rock</button>
+            <button id="Paper" type="button" onclick="playerSelection('Paper')">Paper</button>
+            <button id="Scissor" type="button" onclick="playerSelection('Scissor')">Scissor</button>
+        </div> -->
+    </div>
+</body>
+
+</html>

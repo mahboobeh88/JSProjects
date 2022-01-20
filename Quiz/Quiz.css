@@ -1,0 +1,65 @@
+.q-container {
+    border-radius: 5px;
+    font-size: large;
+}
+
+.answerBox {
+    color: black;
+    cursor: pointer;
+}
+.answerBox:not(.disabled):hover {
+    background-color: lightskyblue;
+}
+.disabled{
+    cursor:unset;
+    pointer-events: none;
+}
+.answerBox:focus , .answerBox.focus{
+    outline: 0;
+    box-shadow: inset 0.5rem 0.5rem 2rem 10px rgb(0 0 0 / 20%) !important;
+}
+#qBox {
+    color: whitesmoke;
+    font-size: x-large;
+}
+
+.wellcomeBox p:first-child {
+    font-size: xx-large;
+    margin-top: 1.5rem;
+}
+
+.wellcomeBox p:last-of-type {
+    margin-bottom: 6rem;
+}
+.show{
+    opacity: 1;
+    transition: opacity 1s linear;
+  }
+.hide{
+    opacity: 0;
+    transition: opacity 1s linear;
+}
+.selected{
+    background-color: lightsteelblue;
+}
+.correctAnswer{
+    background-color: forestgreen;
+    transition: all 1s linear;
+}
+.falseAnswer{
+    background-color: red;
+    transition: all 1s linear;
+}
+
+#resultPannel ul {
+    list-style-type:none
+}
+#resultList span {
+    margin: 0px 9px;
+    padding: 9px 19px;
+    border-radius: 5px;
+    display: inline-block;
+    width: 300px;
+    color: whitesmoke;
+    text-align: center;
+}
